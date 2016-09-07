@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 //cors
-app.use(function(req, res, next){
+app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', 'http://localhost:8000/');
     res.header('Access-Control-Allow-Headers', 'Authorization, X-Request, CustomHeader');
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
